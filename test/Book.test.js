@@ -10,7 +10,7 @@ describe("Instantiating a book", () => {
   });
 });
 
-xdescribe("addStock()", () => {
+describe("addStock()", () => {
   test("allows adding a given quantity of stock", () => {
     const book = new Book("Oryx and Crake", "Margaret Atwood", 10);
 
@@ -26,7 +26,7 @@ xdescribe("addStock()", () => {
     const book = new Book("Oryx and Crake", "Margaret Atwood", 10);
 
     expect(book.quantity).toBe(10);
-    
+
     // Try adding a negative number of stock
     book.addStock(-5);
     
@@ -35,7 +35,7 @@ xdescribe("addStock()", () => {
   });
 });
 
-xdescribe("removeStock()", () => {
+describe("removeStock()", () => {
   test("allows removing a given quantity of stock", () => {
     const book = new Book("Oryx and Crake", "Margaret Atwood", 10);
 
